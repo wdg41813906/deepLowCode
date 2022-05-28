@@ -1,0 +1,97 @@
+{
+  "code": "200",
+  "msg": "success",
+  "data": {
+    "tableId": 1,
+    "workFlowVersionId": "",
+    "workFlowDef": {
+      "type": 3
+    },
+    "flowPermission": [],
+    "WorkflowCode": "iyxLbcV3rHAaMmj4s8bbBr0OmXhyhbDm",
+    "nodeConfig": {
+      "pkId": "sid-start-node",
+      "nodeName": "填报对象",
+      "type": 0,
+      "conditionList": [],
+      "nodeUserList": [],
+      "childNode": {
+        "nodeName": "路由",
+        "type": 5,
+        "priorityLevel": 1,
+        "conditionList": [],
+        "nodeUserList": [],
+        "conditionNodes": [
+          {
+            "nodeName": "部门1",
+            "type": 3,
+            "priorityLevel": 1,
+            "conditionList": [
+              {
+                "columnId": 0,
+                "type": 1
+              }
+            ],
+            "nodeUserList": [],
+            "childNode": {
+              "nodeName": "路由",
+              "type": 4,
+              "priorityLevel": 1,
+              "conditionList": [],
+              "nodeUserList": [],
+              "conditionNodes": [
+                {
+                  "nodeName": "条件1",
+                  "type": 3,
+                  "priorityLevel": 1,
+                  "conditionList": [
+                    {
+                      "columnId": 0,
+                      "type": 1
+                    }
+                  ],
+                  "nodeUserList": [],
+                  "childNode": {
+                    "nodeName": "审核人",
+                    "type": 1,
+                    "priorityLevel": 1,
+                    "conditionList": [],
+                    "nodeUserList": [],
+                    "childNode": null,
+                    "conditionNodes": [],
+                    "error": true
+                  },
+                  "conditionNodes": [],
+                  "error": true
+                },
+                {
+                  "nodeName": "条件2",
+                  "type": 3,
+                  "priorityLevel": 2,
+                  "conditionList": [],
+                  "nodeUserList": [],
+                  "childNode": null,
+                  "conditionNodes": [],
+                  "error": false
+                }
+              ]
+            },
+            "conditionNodes": [],
+            "error": true
+          },
+          {
+            "nodeName": "条件2",
+            "type": 3,
+            "priorityLevel": 2,
+            "conditionList": [],
+            "nodeUserList": [],
+            "childNode": null,
+            "conditionNodes": [],
+            "error": false
+          }
+        ]
+      },
+      "conditionNodes": []
+    }
+  }
+}
